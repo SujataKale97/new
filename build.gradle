@@ -48,6 +48,15 @@ dependencies {
     }
 }  */
 
+apply plugin: 'java' 
+apply plugin: 'war' 
+apply plugin: 'jetty' 
+apply plugin: 'eclipse-wtp'
+
+repositories {
+  mavenCentral()
+}
+
 dependencies {
  
   testCompile group: 'org.testng', name: 'testng', version: '6.9.9'
